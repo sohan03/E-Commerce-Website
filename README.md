@@ -3,12 +3,19 @@
 🎉 Exciting News: I've completed our full stack eCommerce website using the powerful MERN stack!
 
 Features:
+
 Front-end with React JS
+
 Back-end with Express and Node.js
+
 MongoDB for database management
+
 User authentication and registration
+
 Admin panel for product management
+
 Getting Started:
+
 Clone the repository: git clone https://github.com/sohan03/E-Commerce-Website.git
 
 Install dependencies: npm install
