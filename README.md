@@ -10,13 +10,16 @@ User authentication and registration
 Admin panel for product management
 Getting Started:
 Clone the repository: git clone https://github.com/sohan03/E-Commerce-Website.git
+
 Install dependencies: npm install
+
 Navigate to the frontend directory: cd frontend cd backend cd admin
+
 Launch the frontend: npm start
 
-launch the Backend: node index.js
+Launch the Backend: node index.js
 
-launch the Admin Panel: npm run dev
+Launch the Admin Panel: npm run dev
 
 Repository Link: 
 https://github.com/sohan03/E-Commerce-Website.git
