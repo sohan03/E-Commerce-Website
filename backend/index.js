@@ -1,3 +1,5 @@
+require('dotenv').config();
+const mongoURI = process.env.MONGODB_URI
 const port = process.env.PORT || 4000;
 const express = require("express");
 const app = express();
@@ -13,13 +15,17 @@ app.use(express.json());
 app.use(cors());
  
 // Database MongoDB Connection
-mongoose.connect("mongodb+srv://sohankaran35:sohan%231237@cluster0.yhgyntv.mongodb.net/e-commerce", {
- useNewUrlParser: true,
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
   useUnifiedTopology: true,
   ssl: true,
-  sslValidate: true,
+  tls: true,
   tlsAllowInvalidCertificates: true
-})
+}).then(() => {
+  console.log("MongoDB connected successfully");
+}).catch(err => {
+  console.error("MongoDB connection error:", err);
+});
  
 app.get("/", (req, res) => {
     res.send("Express App is Running");
