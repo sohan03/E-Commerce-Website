@@ -14,9 +14,11 @@ app.use(cors());
  
 // Database MongoDB Connection
 mongoose.connect("mongodb+srv://sohankaran35:sohan%231237@cluster0.yhgyntv.mongodb.net/e-commerce", {
-  useNewUrlParser: true,
+ useNewUrlParser: true,
   useUnifiedTopology: true,
-  ssl: true,// Only for development; not recommended for production
+  ssl: true,
+  sslValidate: true,
+  tlsAllowInvalidCertificates: true
 })
  
 app.get("/", (req, res) => {
